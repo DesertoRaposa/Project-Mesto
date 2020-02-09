@@ -1,6 +1,6 @@
 # desertoraposa.github.io
 
-##### [Ссылка на проект](https://desertoraposa.github.io) 
+##### [Ссылка на проект](https://desertoraposa.github.io/webpack_new/) 
 
 ![](https://badgen.net/badge/Version/0.1.0/green)
 ![](https://badgen.net/badge/license/MIT/blue)
@@ -36,9 +36,9 @@
 
 ## Как развернуть проект
 
-Для проверки проекта достаточно зайти на страницу проекта на github.io: [ссылка на проект](https://desertoraposa.github.io) 
+Для проверки проекта достаточно зайти на страницу проекта на github.io: [ссылка на проект](https://desertoraposa.github.io/webpack_new/) 
 
-Для получения доступа к исходному кода проекта можно посетить [страницу с репозиторием](https://github.com/DesertoRaposa/desertoraposa.github.io), после чего склонировать репозиторий к себе на компьютер.
+Для получения доступа к исходному кода проекта можно посетить [страницу с репозиторием](https://github.com/DesertoRaposa/webpack_new), после чего склонировать репозиторий к себе на компьютер.
 
 ## Лицензия
 
