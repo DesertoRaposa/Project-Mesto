@@ -6,9 +6,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 const webpack = require('webpack');
-new webpack.DefinePlugin({
-    'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-});
 const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
@@ -57,15 +54,23 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'style.[contenthash].css'
         }),
+        new OptimizeCssAssetsPlugin({
+            assetNameRegExp: /\.css$/g,
+            cssProcessor: require('cssnano'),
+            cssProcessorPluginOptions: {
+                preset: ['default'],
+            },
+            canPrint: true
+        }),
         new HtmlWebpackPlugin({
             inject: false,
             template: './src/index.html',
             filename: 'index.html'
         }),
         new WebpackMd5Hash(),
-new webpack.DefinePlugin({
-    'NODE_ENV': JSON.stringify(process.env.NODE_ENV),
-    'API_URL': JSON.stringify('http://10.10.10.10:8080/bands')
-})
+        new webpack.DefinePlugin({
+            'NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+            'API_URL': JSON.stringify('http://10.10.10.10:8080/bands')
+        })
    ]
 }
