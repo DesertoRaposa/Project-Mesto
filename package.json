@@ -1,5 +1,5 @@
 {
-  "name": "pr9",
+  "name": "Project-Mesto",
   "version": "0.0.1",
   "description": "",
   "main": "script.js",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DesertoRaposa/PR9.git"
+    "url": "git+https://github.com/DesertoRaposa/Project-Mesto.git"
   },
   "author": "Rezeda Kgairullina",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DesertoRaposa/PR9/issues"
+    "url": "https://github.com/DesertoRaposa/Project-Mesto/issues"
   },
-  "homepage": "https://github.com/DesertoRaposa/PR9#readme",
+  "homepage": "https://github.com/DesertoRaposa/Project-Mesto#readme",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.4",
