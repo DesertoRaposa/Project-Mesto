@@ -8,9 +8,9 @@ const list = document.querySelector(".places-list");
 
 let card_list = new CardList(list);
 
-let serverURL = 'https://praktikum.tk/cohort6/';
+let serverURL = 'https://nomoreparties.co/cohort6/';
 if (process.env.NODE_ENV == 'developement') {
-    serverURL = 'https://praktikum.tk/cohort6/';
+    serverURL = 'https://nomoreparties.co/cohort6/';
 }
 
 const API = new APIClass("2374ea76-9940-4bf3-8811-73a7f8930642", serverURL);
