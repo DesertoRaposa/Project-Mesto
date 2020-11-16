@@ -8,9 +8,9 @@ const list = document.querySelector(".places-list");
 
 let card_list = new CardList(list);
 
-let serverURL = 'https://praktikum.tk/cohort6/';
+let serverURL = 'https://nomoreparties.co/cohort6/';
 if (process.env.NODE_ENV == 'developement') {
-    serverURL = 'https://praktikum.tk/cohort6/';
+    serverURL = 'https://nomoreparties.co/cohort6/';
 }
 
 const API = new APIClass("2374ea76-9940-4bf3-8811-73a7f8930642", serverURL);
@@ -22,7 +22,7 @@ API.loadProfile(function (data) {
 
     userInfoName.textContent = data.name;
     userInfoJob.textContent = data.about;
-    userInfoPhoto.style.backgroundImage = 'url(' + "https://pictures.s3.yandex.net/frontend-developer/common/ava.jpg" + ')';
+    userInfoPhoto.style.backgroundImage = 'url(' + "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" + ')';
 
     card_list.setApi(API);
 });
